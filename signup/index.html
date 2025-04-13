@@ -1,45 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>signup</title>
-    <link rel="website icon" type="png" 
-	href="titlelogo.png">
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <nav>
-        <div class="brand">
-          <a href="../index.html">MeShop.</a>
-        </div>
-        <div class="nav-items">
-          <a href="../index.html">Home</a>
-          <a href="../login/index.html">Login</a>
-          <a href="../signup/index.html">Signup</a>
-          <a href="../shop/index.html">Shop</a>
-          <a href="../cart/index.html">My Cart</a>
-          <a href="../profile/index.html">Profile</a>
-        </div>
-      </nav>
-      <div class="container">
-        <div style="font-size: 30px; margin-bottom: 20px;">SignUp</div>
-        <form id="inputs" class="inputs">
-            <input type="text" placeholder="First Name" id="first-name">
-            <input type="text" placeholder="Last Name" id="last-name">
-            <input type="text" placeholder="Email" id="email">
-            <input type="password" placeholder="Password" id="pass">
-            <input type="password" placeholder="Confirm Password" id="confirm-pass">
-
-            <div>
-                <button type="submit" id="signup">Signup</button>
-                <span style="width: fit-content; margin-left: 20px;" id="message"></span>
-            </div>
-
-        </form>
-
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup - MeShop</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" href="../titlelogo.png" />
+  </head>
+  <body>
+    <nav class="glass-frost nav-glow">
+      <div class="brand neon-text"><a href="../index.html">MeShop.</a></div>
+      <div class="nav-items">
+        <a href="../index.html">Home</a>
+        <a href="../login/index.html">Login</a>
+        <a href="../signup/index.html">Signup</a>
+        <a href="../shop/index.html">Shop</a>
+        <a href="../cart/index.html">My Cart</a>
+        <a href="../profile/index.html">Profile</a>
       </div>
-    <script src="./script.js"></script>
-</body>
+      <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+    </nav>
+
+    <main class="page-container fade-in">
+      <div class="glass-card neon-border scale-in">
+        <h2 class="neon-text">Signup</h2>
+        <form class="form-style">
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit" class="btn neon-btn">Signup</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="../script.js"></script>
+  </body>
 </html>

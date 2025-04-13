@@ -1,47 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyShop.</title>
-    <link rel="website icon" type="png" 
-	href="titlelogo.png">
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-    <nav>
-        <div class="brand">
-          <a href="./index.html">MeShop.</a>
-        </div>
-        <div class="nav-items">
-          <a href="./index.html">Home</a>
-          <a href="./login/index.html">Login</a>
-          <a href="./signup/index.html">Signup</a>
-          <a href="./shop/index.html">Shop</a>
-          <a href="./cart/index.html">My Cart</a>
-          <a href="./profile/index.html">Profile</a>
-        </div>
-      </nav>
-  
-      <div class="container">
-        <div>
-          <h1 style="font-size: 60px; font-weight: 400;">MyShop.</h1>
-          <p>My First Shop built on HTML,CSS AND JavaScript</p>
-          <div class="buttons-container">
-            <button id="login">Login</button>
-            <button id="signup" style="background-color: white; color: black; border:1px solid black">Signup</button>
-          </div>
-        </div>
-  
-        
-      <div class="image">
-        <img src="./landingPagePic.png" alt="">
+    <link rel="icon" href="titlelogo.png" type="image/png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav class="glass-frost nav-glow">
+      <div class="brand neon-text">
+        <a href="./index.html">MeShop.</a>
       </div>
+      <div class="nav-items">
+        <a href="./index.html">Home</a>
+        <a href="./login/index.html">Login</a>
+        <a href="./signup/index.html">Signup</a>
+        <a href="./shop/index.html">Shop</a>
+        <a href="./cart/index.html">My Cart</a>
+        <a href="./profile/index.html">Profile</a>
       </div>
-  
-  
-  
-      <script src="./script.js"></script>
-</body>
+      <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+    </nav>
+
+    <main class="container fade-in">
+      <section class="glass-card neon-border">
+        <h1 class="neon-text">MyShop.</h1>
+        <p class="tagline">Your journey into modern web design starts here 🚀</p>
+        <div class="buttons-container">
+          <button id="login" class="btn neon-btn">Login</button>
+          <button id="signup" class="btn outline neon-btn">Signup</button>
+        </div>
+      </section>
+
+      <section class="image slide-in">
+        <img src="./landingPagePic.png" alt="Landing Page Preview" />
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
